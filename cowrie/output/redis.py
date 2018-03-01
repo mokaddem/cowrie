@@ -20,10 +20,7 @@ class Output(cowrie.core.output.Output):
         self.port = CONFIG.get('output_redis', 'port')
         self.db = CONFIG.get('output_redis', 'db')
         self.keyname = CONFIG.get('output_redis', 'keyname')
-        try:
-            self.redis = redis.StrictRedis(self.host, self.port, self.db)
-        except Exception as e:
-            log.err(e)
+        self.redis = redis.StrictRedis(self.host, self.port, self.db)
 
     def stop(self):
         pass
