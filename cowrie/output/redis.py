@@ -13,7 +13,7 @@ class Output(cowrie.core.output.Output):
 
     def start(self):
         """
-        Initialize pymisp module and ObjectWrapper (Abstract event and object creation)
+        Get config
         """
         self.host = CONFIG.get('output_redis', 'host')
         self.port = CONFIG.get('output_redis', 'port')

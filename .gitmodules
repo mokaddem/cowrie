@@ -1,0 +1,3 @@
+[submodule "cowrie/output/PyMISP-wrapper"]
+	path = cowrie/output/PyMISP-wrapper
+	url = https://github.com/mokaddem/PyMISP-wrapper.git
