@@ -9,7 +9,7 @@ import sys, os
 # Add path to support external library
 current_path = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(current_path)
-from PyMISPWrapper.RedisToMISP import MISPItemToRedis
+from PyMISP_wrapper.RedisToMISP import MISPItemToRedis
 
 class Output(cowrie.core.output.Output):
 
