@@ -562,3 +562,10 @@ logfile = log/cowrie.json
 #port = 6379
 #db = 0
 #keyname = cowrie
+
+
+[output_cowrieToRedis]
+host = 127.0.0.1
+port = 6379
+db = 0
+keyname = cowrie
